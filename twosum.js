@@ -27,7 +27,7 @@ var twoSum = function(nums, target) {
         let num = nums[index];
         let complimentNum = target - num;
         
-        if(numberMap.hasOwnProperty(complimentNum)){
+        if(complimentNum in numberMap){
             result.push(numberMap[complimentNum]);
             result.push(index);
             
